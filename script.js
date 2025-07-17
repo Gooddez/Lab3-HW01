@@ -16,12 +16,12 @@ const selectChecker = (event) => {
 }
 
 const nameChecker = (event) => {
-    isValid = 2 <= event.value.length & userName.value.length <= 20
+    isValid = 2 <= event.value.length & event.value.length <= 20
     validColorCheck(event, isValid)
 }
 
 const surnameChecker = (event) => {
-    isValid = 2 <= event.value.length & surname.value.length <= 30
+    isValid = 2 <= event.value.length & event.value.length <= 30
     validColorCheck(event, isValid)
 }
 

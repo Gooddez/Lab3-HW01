@@ -14,13 +14,13 @@
 <body>
     <form>
         <div>
-            <label for="userID">เลขบัตรประชาชน</label>
-            <input type="text" class="form-control box" name="userID" id="userID" placeholder="0000000000000" oninput="idChecker(this)"">
+            <label for="ID">เลขบัตรประชาชน</label>
+            <input type="text" class="form-control" name="เลขบัตรประชาชน" id="ID" placeholder="ex. 0000000000000" onchange="alertSender(this)" oninput="idChecker(this)">
         </div>
 
         <div>
             <label for="title">คำนำหน้าชื่อ</label>
-            <select name="title" class="form-select" id="title" oninput="selectChecker(this)">
+            <select name="title" class="form-select" id="title" onchange="alertSender(this)" oninput="selectChecker(this)">
                 <option value="0">---------- คำนำหน้า ----------</option>
                 <option value="1">นาย</option>
                 <option value="2">นาง</option>
@@ -32,32 +32,32 @@
 
         <div>
             <label for="name">ชื่อ</label>
-            <input type="text" class="form-control" name="name" id="name" oninput="nameChecker(this)">
+            <input type="text" class="form-control" name="ชื่อ" id="name" placeholder="ex. นายส้มโอ" onchange="alertSender(this)" oninput="nameChecker(this)">
         </div>
 
         <div>
             <label for="surname">นามสกุล</label>
-            <input type="text" class="form-control" name="surname" id="surname" oninput="surnameChecker(this)">
+            <input type="text" class="form-control" name="นามสกุล" id="surname" placeholder="ex. มะพร้าว" onchange="alertSender(this)" oninput="surnameChecker(this)">
         </div>
 
         <div>
             <label for="address">ที่อยู่</label>
-            <input type="text" class="form-control" name="address" id="address" oninput="addressChecker(this)">
+            <input type="text" class="form-control" name="ที่อยู่" id="address" placeholder="ex. 1/18 ซอยลาดกระบัง1 ถนนลาดกระบัง" onchange="alertSender(this)" oninput="addressChecker(this)">
         </div>
 
         <div>
             <label for="subdistrict">ตำบล/แขวง</label>
-            <input type="text" class="form-control" name="subdistrict" id="subdistrict" oninput="districtChecker(this)">
+            <input type="text" class="form-control" name="ตำบล/แขวง" id="subdistrict" placeholder="ex. แขวงลาดกระบัง" onchange="alertSender(this)" oninput="districtChecker(this)">
         </div>
 
         <div>
             <label for="district">อำเภอ/เขต</label>
-            <input type="text" class="form-control" name="district" id="district" oninput="districtChecker(this)">
+            <input type="text" class="form-control" name="อำเภอ/เขต" id="district" placeholder="ex. เขตลาดกระบัง" onchange="alertSender(this)" oninput="districtChecker(this)">
         </div>
 
         <div>
             <label for="province">จังหวัด</label>
-            <select name="province" class="form-select" id="province" oninput="selectChecker(this)">
+            <select name="จังหวัด" class="form-select" id="province" onchange="alertSender(this)" oninput="selectChecker(this)">
                 <option value="0" selected>--------- เลือกจังหวัด ---------</option>
                 <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
                 <option value="กระบี่">กระบี่ </option>
@@ -141,7 +141,7 @@
 
         <div>
             <label for="postalcode">รหัสไปรษณีย์</label>
-            <input type="text" class="form-control" name="postalcode" id="postalcode" oninput="selectChecker(this)">
+            <input type="text" class="form-control" name="รหัสไปรษณีย์" id="postalcode" placeholder="ex. 12345" onchange="alertSender(this)" oninput="postalcodeChecker(this)">
         </div>
 
     </form>

@@ -6,7 +6,7 @@ const validColorCheck = (dom, bool) => {
     }
 }
 const idChecker = (event) => {
-    isValid = event.value.length == 13;
+    isValid = event.value.length == 13
     validColorCheck(event, isValid)
 }
 

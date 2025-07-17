@@ -15,7 +15,7 @@
     <form>
         <div>
             <label for="userID">เลขบัตรประชาชน</label>
-            <input type="text" class="form-control box" name="userID" id="userID" placeholder="0000000000000" oninput="idChecker(this)" onchange="idChecker(this)">
+            <input type="text" class="form-control box" name="userID" id="userID" placeholder="0000000000000" oninput="idChecker(this)"">
         </div>
 
         <div>
@@ -32,32 +32,32 @@
 
         <div>
             <label for="name">ชื่อ</label>
-            <input type="text" class="form-control" name="name" id="name">
+            <input type="text" class="form-control" name="name" id="name" onchange="nameChecker(this)">
         </div>
 
         <div>
             <label for="surname">นามสกุล</label>
-            <input type="text" class="form-control" name="surname" id="surname">
+            <input type="text" class="form-control" name="surname" id="surname" onchange="surnameChecker(this)">
         </div>
 
         <div>
             <label for="address">ที่อยู่</label>
-            <input type="text" class="form-control" name="address" id="address">
+            <input type="text" class="form-control" name="address" id="address" onchange="addressChecker(this)">
         </div>
 
         <div>
             <label for="subdistrict">ตำบล/แขวง</label>
-            <input type="text" class="form-control" name="subdistrict" id="subdistrict">
+            <input type="text" class="form-control" name="subdistrict" id="subdistrict" onchange="districtChecker(this)">
         </div>
 
         <div>
             <label for="district">อำเภอ/เขต</label>
-            <input type="text" class="form-control" name="district" id="district">
+            <input type="text" class="form-control" name="district" id="district" onchange="districtChecker(this)">
         </div>
 
         <div>
             <label for="province">จังหวัด</label>
-            <select name="province" class="form-select" id="province">
+            <select name="province" class="form-select" id="province" onchange="selectChecker(this)">
                 <option value="0" selected>--------- เลือกจังหวัด ---------</option>
                 <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
                 <option value="กระบี่">กระบี่ </option>
@@ -141,7 +141,7 @@
 
         <div>
             <label for="postalcode">รหัสไปรษณีย์</label>
-            <input type="text" class="form-control" name="postalcode" id="postalcode">
+            <input type="text" class="form-control" name="postalcode" id="postalcode" onchange="selectChecker(this)">
         </div>
 
     </form>
